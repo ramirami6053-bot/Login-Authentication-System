@@ -1,0 +1,24 @@
+/* small custom tweaks on top of Tailwind */
+:root {
+  --card-radius: 1rem;
+}
+
+/* Make inputs a little taller on mobile */
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+  line-height: 1.25;
+}
+
+/* subtle focus */
+input:focus {
+  box-shadow: 0 0 0 3px rgba(99,102,241,0.12);
+}
+
+/* center container a touch better on small screens */
+@media (max-width: 420px) {
+  main { padding: 1rem; }
+}
+
+/* demo helper: keep error area height stable to avoid layout shift */
+#li-msg, #re-msg { min-height: 1.25rem; }
